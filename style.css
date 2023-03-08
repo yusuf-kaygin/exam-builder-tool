@@ -1,0 +1,406 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+#react-root,
+#container,
+#main-content {
+  height: 100%;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+.padding-right-20 {
+  padding-right: 20px;
+}
+.padding-left-20 {
+  padding-left: 20px;
+}
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.container,
+.exam-page {
+  height: 100%;
+}
+
+.exam-page .sm-side .inbox-body {
+  padding: 5px;
+}
+
+.exam-page .sm-side .user-head h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #ececec;
+}
+
+.exam-page .sm-side .user-head .time {
+  color: #fff;
+  background-color: #09939c;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+.exam-page .sm-side .inbox-body .panel-body {
+  padding: 0px;
+}
+
+.exam-page .sm-side .inbox-body .panel-group {
+  margin-bottom: 0px;
+}
+
+.exam-page .sm-side .inbox-body .panel-heading {
+  font-size: 14px;
+}
+
+.exam-page .sm-side .inbox-body .panel-heading .lesson-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.exam-page .sm-side .inbox-body .panel-heading a {
+  color: #2a3542;
+  max-height: 40px;
+}
+
+.questionsListOfLesson ol {
+  padding-left: 10px;
+  overflow-y: auto;
+}
+.questionRow {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+.question-index {
+  color: black;
+  font-size: 15px;
+  padding-right: 5px;
+}
+
+.questionsListOfLesson ol li {
+  margin-left: 20px;
+}
+
+.modal-backdrop.fade.in {
+  height: 100%;
+}
+
+.questionsListOfLesson ol li div {
+  height: 100%;
+  padding: 5px;
+  margin-left: -30px;
+  padding-left: 26px;
+  cursor: pointer;
+}
+
+.questionOption {
+  margin: 0px 3px;
+  border: 2px solid rgb(119, 119, 119);
+  display: inline-block;
+  min-width: 10px;
+  padding: 4px 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(119, 119, 119);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 50%;
+}
+
+.panel-heading .accordion-toggle:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  color: #41cac0;
+}
+.panel-heading .accordion-toggle.collapsed:before {
+  content: "\f054";
+  color: grey;
+}
+
+.exam-page .lg-side .panel-body img {
+  max-width: 80%;
+}
+
+.exam-page .lg-side .panel-body .questionBody {
+  font-size: 18px;
+}
+
+.exam-page .lg-side .panel-body .answersBody {
+  font-size: 17px;
+}
+
+.exam-page .lg-side .panel-body .answersBody .questionOption {
+  float: left;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.questionOption.selected {
+  background-color: #696968;
+  color: #ffffff;
+}
+
+.questionOption.correctAnswer {
+  border: 2px solid #4caf50;
+}
+
+.exam-page .lg-side .questionArea {
+  overflow-y: auto;
+}
+
+.examNavigationBar {
+  height: 40px;
+  background-color: #bdbdbd;
+  padding: 5px 10px;
+}
+
+.examNavigationBar .questionNumber {
+  float: left;
+  color: #0c0c0c;
+  font-size: 15px;
+  padding-top: 3px;
+}
+
+.examControlBar {
+  height: 40px;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+}
+
+.exam-starter {
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exam-page .sm-side .inbox-body .panel-group .panel-collapse.collapse.in {
+  height: auto !important;
+}
+
+.exam-summary span {
+  margin: 0px 2px;
+}
+
+.exam-summary .correct {
+  background-color: #a9d86e;
+}
+
+.exam-summary .wrong {
+  background-color: #ff6c60;
+}
+
+.exam-summary .empty {
+  background-color: #fcb322;
+}
+
+@media (max-width: 600px) {
+  .mail-box.exam-page {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+  }
+
+  .exam-page .sm-side {
+    width: 100% !important;
+  }
+
+  .exam-page .lg-side {
+    width: 100% !important;
+  }
+
+  .exam-nav-button {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 40px;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    background-color: #4caf50 !important;
+    color: #ffffff !important;
+  }
+
+  .exam-nav-button.prev {
+    margin-right: 45px;
+  }
+}
+
+.written-examination {
+  padding: 20px;
+}
+
+.written-examination .exam-header {
+  background-color: white;
+  border: 1px solid rgb(195 195 195);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 75px;
+}
+
+.written-examination .exam-header div:nth-child(1) img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.written-examination .exam-header {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.written-examination .exam-header div:nth-child(2) div:nth-child(1) {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.written-examination .exam-header button {
+  border: 3px solid #009100;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 800;
+  width: 200px;
+}
+
+.written-examination .exam-body {
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
+}
+
+.written-examination .questions {
+  padding: 20px 30px;
+}
+
+.written-examination .questions .lesson-item .question-box {
+  border: 1px solid rgb(211 211 211);
+  padding: 15px;
+  max-height: 500px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.written-examination .questions .hr {
+  background-color: rgb(237 237 237);
+  border-radius: 30px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.written-examination .questions .lesson-item .lesson-title {
+  font-size: 16px;
+}
+
+.written-examination .question-box .question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.written-examination .question-box .question-header div:last-child {
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.written-examination .question-box .question-header div:first-child {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(89, 89, 89);
+}
+
+.written-examination .question-box .answer {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.written-examination .question-box .answer div:last-child {
+  font-weight: 700;
+  color: #009100;
+}
+
+.written-examination .point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.written-examination .point input {
+  width: 120px;
+}
+
+.written-examination .point select {
+  cursor: pointer;
+  width: 120px;
+}
+
+.written-examination .point div:last-child {
+  display: flex;
+}
+
+.written-examination .point div:last-child select {
+  margin-left: 5px;
+}
+
+.written-examination .correct-question {
+  border-left: 7px solid darkgreen !important;
+}
+
+.written-examination .wrong-question {
+  border-left: 7px solid darkred !important;
+}
+
+.written-examination .empty-question {
+  border-left: 7px solid black !important;
+}
+
+.written-examination .exam-read {
+  display: flex;
+}
+
+.written-examination .exam-read div {
+  margin: 0px 5px;
+  font-weight: 700;
+}
+
+.written-examination .exam-read div:nth-child(1) {
+  color: darkgreen;
+}
+
+.written-examination .exam-read div:nth-child(2) {
+  color: darkred;
+}
+
+.written-examination .exam-read div:nth-child(3) {
+  color: dark;
+}
+
+.written-examination .exam-read div:nth-child(4) {
+  color: darkblue;
+}
